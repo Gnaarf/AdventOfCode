@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5ECDCAD2-8939-46EB-BB01-B689C0ED0AD3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AdventOfCode</RootNamespace>
+    <AssemblyName>AdventOfCode</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdventOfCode.cs" />
+    <Compile Include="AdventOfCode2022\DayThreeRucksackReorganization.cs" />
+    <Compile Include="AdventOfCode2022\DayFourCampCleanup.cs" />
+    <Compile Include="AdventOfCode2022\DayFiveSupplyStacks.cs" />
+    <Compile Include="AdventOfCode2022\DayTwoRockPaperScissors.cs" />
+    <Compile Include="AdventOfCode2022\DayOneCalorieCounting.cs" />
+    <Compile Include="AdventOfCode2023\DayTwentytwoSandSlabs.cs" />
+    <Compile Include="AdventOfCode2023\DayTwentyoneStepCounter.cs" />
+    <Compile Include="AdventOfCode2023\DayTwentyPulsePropagation.cs" />
+    <Compile Include="AdventOfCode2023\DayNineteenAplenty.cs" />
+    <Compile Include="AdventOfCode2023\DayEighteenLavaductLagoon.cs" />
+    <Compile Include="AdventOfCode2023\DaySeventeenClumsyCrucible.cs" />
+    <Compile Include="AdventOfCode2023\DaySixteenTheFloorWillBeLava.cs" />
+    <Compile Include="AdventOfCode2023\DayFifteenLensLibrary.cs" />
+    <Compile Include="AdventOfCode2023\DayFourteenParabolicReflectorDish.cs" />
+    <Compile Include="AdventOfCode2023\DayThirteenPointOfIncidence.cs" />
+    <Compile Include="AdventOfCode2023\DayTwelveHotSprings.cs" />
+    <Compile Include="AdventOfCode2023\DayElevenCosmicExpansion.cs" />
+    <Compile Include="AdventOfCode2023\DayTenPipeMaze.cs" />
+    <Compile Include="AdventOfCode2023\DayNineMirageMaintenance.cs" />
+    <Compile Include="AdventOfCode2023\DayEightHauntedWasteland.cs" />
+    <Compile Include="AdventOfCode2023\DaySevenCamelCards.cs" />
+    <Compile Include="AdventOfCode2023\DaySixWaitForIt.cs" />
+    <Compile Include="AdventOfCode2023\DayFiveIfYouGiveASeedAFertilizer.cs" />
+    <Compile Include="AdventOfCode2023\DayTemplate.cs" />
+    <Compile Include="AdventOfCode2023\DayFourScratchcards.cs" />
+    <Compile Include="AdventOfCode2023\DayThreeGearRatios.cs" />
+    <Compile Include="AdventOfCode2023\DayTwoCubeConundrum.cs" />
+    <Compile Include="Heap.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="AdventOfCode2023\DayOneTrebuchet.cs" />
+    <Compile Include="Vector3Int.cs" />
+    <Compile Include="Vector2Long.cs" />
+    <Compile Include="Vector2Int.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
