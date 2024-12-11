@@ -10,7 +10,7 @@ internal class AdventOfCode
 {
     public static void Main()
     {
-        DaySolver daySolver = new DayThreeMullItOver();
+        DaySolver daySolver = new DayFourCeresSearch();
 
         List<string> inputLines = ConvertToListOfStrings("../../../" + daySolver.GetType().ToString() + ".txt");
         //inputLines = TestData();
@@ -67,7 +67,7 @@ internal class AdventOfCode
 
     static List<string> TestData()
     {
-        string s = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))";
+        string s = "MMMSXXMASM\r\nMSAMXMSMSA\r\nAMXSXMAAMM\r\nMSAMASMSMX\r\nXMASAMXAMM\r\nXXAMMXXAMA\r\nSMSMSASXSS\r\nSAXAMASAAA\r\nMAMMMXMMMM\r\nMXMXAXMASX";
         s = s.RemoveChar('\r');
         return s.Split('\n').ToList();
     }

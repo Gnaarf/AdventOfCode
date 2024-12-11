@@ -64,6 +64,7 @@
     <Compile Include="AdventOfCode2023\DayFourScratchcards.cs" />
     <Compile Include="AdventOfCode2023\DayThreeGearRatios.cs" />
     <Compile Include="AdventOfCode2023\DayTwoCubeConundrum.cs" />
+    <Compile Include="AdventOfCode2024\DayFourCeresSearch.cs" />
     <Compile Include="AdventOfCode2024\DayThreeMullItOver.cs" />
     <Compile Include="AdventOfCode2024\DayTwoRedNosedReports.cs" />
     <Compile Include="AdventOfCode2024\DayOneHistorianHysteria.cs" />
